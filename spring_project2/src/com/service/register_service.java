@@ -8,7 +8,7 @@ import com.dbconnection.dbconnect;
 import Registerbean.registerbean;
 
 public class register_service extends dbconnect {
-public int insertdata(registerbean reg)
+public boolean insertdata(registerbean reg)
 {
 	try
 	{
@@ -20,22 +20,20 @@ public int insertdata(registerbean reg)
 	    ps.setString(5, reg.getEmail());
 	    ps.setString(6, reg.getUname());
 	    ps.setString(7, reg.getPswd());
-	    ps.setString(8, reg.getFile());
+	    ps.setString(8, reg.getFilename());
 	    boolean i=ps.execute();
-	    if(i==true)
-	    {
-	    	return 1;
-	    }
-	    else {
-			return 0;
-		}
+	    System.out.println(i);
+	    	return i;
+	    	
+	    
 	}
 	catch (SQLException e)
 	{
 		e.printStackTrace(); 
+		return false;
 	}
 	
-	return 0;
+
 	
 }
 

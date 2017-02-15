@@ -11,7 +11,7 @@
 <title>Registration</title>
 </head>
 <body style="background-color: gray;">
-<form name="save" action="save" method="POST">
+<form:form name="Save" action="save" method="POST" enctype="multipart/form-data">
 <div class="container-fluid">
       <div class="row" align="center" style="background-color:  #98AFC7 ;">
           <h1>Register Your Details</h1>
@@ -98,6 +98,6 @@
       </div>
       </div>
 </div>
-</form>
+</form:form>
 </body>
 </html>

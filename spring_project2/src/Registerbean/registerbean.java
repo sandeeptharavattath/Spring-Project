@@ -8,7 +8,7 @@ public class registerbean {
 	private String email;
 	private String uname;
 	private String pswd;
-	private String file;
+	private String filename;
 	public String getFname() {
 		return fname;
 	}
@@ -51,11 +51,11 @@ public class registerbean {
 	public void setPswd(String pswd) {
 		this.pswd = pswd;
 	}
-	public String getFile() {
-		return file;
+	public String getFilename() {
+		return filename;
 	}
-	public void setFile(String file) {
-		this.file = file;
+	public void setFilename(String filename) {
+		this.filename = filename;
 	}
 	
 
